@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity">
+
+<TextView
+    android:id="@+id/title1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="You are in Activity 1"
+    android:layout_centerHorizontal="true"
+    />
+
+<ImageView
+    android:id="@+id/animal"
+    android:layout_width="match_parent"
+    android:layout_height="600dp"
+    android:src="@drawable/hourse"
+    android:layout_below="@+id/title1"
+    />
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/btn_activity2"
+    android:text="gotoAct2"
+    android:layout_alignParentBottom="true"
+    />
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/btn_activity3"
+    android:text="gotoAct3"
+    android:layout_alignParentBottom="true"
+    android:layout_below="@+id/btn_activity2"
+    />
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnWidth="160dp"
+        android:horizontalSpacing="5dp"
+        android:numColumns="3"
+        android:verticalSpacing="5dp" />
+
+
+    <ImageView
+        android:id="@+id/imageBird"
+        android:layout_width="270dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/imgLarge"
+        tools:src="@drawable/bird"/>
+
+
+</RelativeLayout>
